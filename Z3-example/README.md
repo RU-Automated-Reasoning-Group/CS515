@@ -6,19 +6,19 @@ Running this example on Windows:
 ```
 set PATH=%PATH%;MYZ3\bin
 set PYTHONPATH=MYZ3\bin\python
-python example.py
+python z3ex.py
 ```
 
 Running this example on Linux:
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:MYZ3/bin
 export PYTHONPATH=MYZ3/bin/python
-python example.py
+python z3ex.py
 ```
 
 Running this example on macOS:
 ```
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:MYZ3/bin
 export PYTHONPATH=MYZ3/bin/python
-python example.py
+python z3ex.py
 ```
