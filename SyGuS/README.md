@@ -1,5 +1,9 @@
 # SyGuS
 
+## Z3:
+
+Download and test Z3 before running the following commands. See the `Z3-example` directory.
+
 ## Algorithm 1: Baseline (top-down enumeration):
 
 python3 ./programs/baseline/main.py ./tests/open_tests/max2.sl
