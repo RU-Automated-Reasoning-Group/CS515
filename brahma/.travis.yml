@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.6"
+dist: bionic 
+sudo: false
+before_install:
+  - pip3 install z3-solver
+script: 
+  - python3 test.py
