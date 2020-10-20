@@ -1,0 +1,225 @@
+
+<!-- saved from url=(0067)https://people.csail.mit.edu/asolar/SynthesisCourse/Assignment1.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assignment 2</title>
+
+<script type="text/javascript" async="" src="./Assignment 2_files/MathJax.js">
+</script>
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" src="./Assignment 2_files/library.js"></script>
+<link href="./Assignment 2_files/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+
+<div class="content">
+
+
+<h1>Assignment 2</h1>
+
+
+<b>Submission Instructions</b>
+This assignment is borrowed from the MIT Introduction to Program Synthesis course.
+<b>The deadline is Nov 13, 9:59am.</b>
+In order to submit your code, pack your <code>part1.js, part1.html, part2.js, part2.html</code> files
+into a zip file and submit through Canvas.
+If you are uncomfortable with JavaScript, you may write your code in a mainstream programming
+language that you like (chosen from C, C++, Java, Python, and OCaml);
+however, your code must have the same interface functions as defined in <code>part1.js</code> and <code>part2.js</code>
+and you must document how your code can be tested (e.g. providing a script) in great details.
+
+<p>
+
+<b>Collaboration policy</b>
+You are allowed to consult with at most one other student
+while working on the problems, but every student is responsible for
+writing their own code and submitting their own work. If you
+do consult with another student, you should explicitly acknowledge
+them in your submission (you can do that in a comment in <code>part1.js</code> and <code>part2.js</code>).
+
+
+</p><h2>The previous assignment</h2>
+You have implemented a variant of the bottom-up inductive synthesis approach discussed in class in Assignment 1.
+We have defined a simple language for the following expressions:
+<div class="codeblock"><code><div style="margin-left:0px;">Node:=  Num(int n).....................// numeric constant num:int</div><div style="margin-left:20px;">| False()...........................// constant FALSE.</div><div style="margin-left:20px;">| Var(string varname)...............// variable   Var:int</div><div style="margin-left:20px;">| Plus(Node left, Node right)......// arithmetic expressions plus and times</div><div style="margin-left:20px;">| Times(Node left, Node right).....//  Plus(int,int):int     Times(int, int):int</div><div style="margin-left:20px;">| Lt(Node left, Node right)........//less than operator Lt(int, int):bool</div><div style="margin-left:20px;">| And(Node left, Node right).......// boolean operators And(bool,bool):bool</div><div style="margin-left:20px;">| Not(Node left)...................// Not(bool):bool</div><div style="margin-left:20px;">| Ite(Node cond, Node tcase, Node fcase)...// if-then-else;  Ite(bool, int, int):int</div></code></div>
+
+In Problem 1.b of the previous assignment, you implemented the following synthesis function:
+<div class="codeblock"><code><div style="margin-left:0px;">function bottomUpFaster(globalBnd, intOps, boolOps, vars, consts, inputoutput)</div></code></div>
+
+<ul>
+<li><code>globalBnd</code> : A bound on the maximum depth allowed for the generated ASTs.</li>
+<li><code>intOps</code>: A list of the integer AST nodes the generator is allowed to use.</li>
+<li><code>boolOps</code>: A list of the boolean AST nodes the generator is allowed to use.</li>
+<li><code>vars</code>: A list of all the variable names that can appear in the generated expressions.</li>
+<li><code>consts</code>: A list of all the integer constants that can appear in the generated expressions.</li>
+
+<li><code>inputoutput</code>: A list of inputs/outputs to the function. Each
+element in the list is a map from variable names to values; the variable "_out" maps to the expected output for that input.</li>
+<li><b>return value</b>: An AST for an expression that satisfies all the input/output pairs.
+If none is found before reaching the globalBnd, then it should return the string "FAIL".</li>
+</ul>
+
+Recall that the above function exploits the following additional constraints:
+<ul>
+<li>Multiplications can only occur between variables and constants or between two variables</li>
+<li>Comparisons cannot include any arithmetic, only variables and constants</li>
+</ul>
+
+
+<h2>Problem 1 (40 pts)</h2>
+
+You goal is to implement the STUN algorithm described in <b>Synthesis through Unification (STUN)</b> from <a href="https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture3.htm">here</a>.
+Please go through the description of the algorithm carefully before implementation.
+The algorithm should search the arithmetic language from Problem 1.b in Assignment 1 with top level branches. You should provide an
+example that illustrates the ability of the algorithm to produce programs that could
+not be synthesized using the algorithms 1.a and 1.b from Assignment 1.
+<div class="codeblock"><code><div style="margin-left:0px;">function bottomUpFasterSTUN(globalBnd, vars, consts, inputoutput)</div></code></div>
+The globalBnd parameter should now bound only the size of the arithmetic expressions, not
+of the overall program.
+<p>
+<b>Hint: </b> You should reuse your implementation from Problem 1.b to search for
+conditionals and arithmetic expressions. So you should implemnt this problem in <code>part1.js</code> and <code>part1.html</code>
+(i.e. reimplement Problem 1.b based on <code>STUN</code>).
+
+
+<h2>Problem 2 (60 pts)</h2>
+This problem is about quantitative synthesis. Your goal for this
+part is to extend the simple enumerative synthesizer from
+Problem 1 in Assignment 1 with a probabilistic grammar for the expression language.
+Recall the grammar which is shown below.
+<div class="codeblock"><code><div style="margin-left:0px;">expr:=  num(int n).....................// numeric constant num:int</div><div style="margin-left:20px;">| flse()...........................// constant FALSE. Unfortunately ,we can't call it false</div><div style="margin-left:20px;">| vr(string varname)...............// variable   var:int</div><div style="margin-left:20px;">| plus(expr left, expr right)......// arithmetic expressions plus and times</div><div style="margin-left:20px;">| times(expr left, expr right).....//  plus(int,int):int     times(int, int):int</div><div style="margin-left:20px;">| lt(expr left, expr right)........//less than operator lt(int, int):int</div><div style="margin-left:20px;">| and(expr left, expr right).......// boolean operators and(bool,bool):bool</div><div style="margin-left:20px;">| not(expr left)...................// not(bool):bool</div><div style="margin-left:20px;">| ite(expr cond, expr tcase, expr fcase)...// if-then-else;  ite(bool, int, int):int</div></code></div>
+
+Your goal is to write a synthesis procedure that takes as a parameter
+a probability function <code>p(t1, pos, t2)</code>, which will provide
+the probability that a node of type <code>t1</code> is a child in the position
+<code>pos</code> of a node of type <code>t2</code>. So for example,
+<code>p(vr, 0, plus)</code> is the probability that a <code>plus</code>
+node has a <code>vr</code> node as its first parameter (in the zero position).
+You can assume that nodes that don't type-check would have probability
+zero, so for example <code>p(plus, 0, ite)=0.0</code>.
+Also, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;&amp;#x2200;&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;munder&gt;&lt;mo&gt;&amp;#x2211;&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/munder&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1.0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.388em; padding-bottom: 0.388em;">∀</span></span><span id="MJXc-Node-4" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.443em; padding-bottom: 0.278em;">i</span></span><span id="MJXc-Node-5" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.162em; padding-bottom: 0.553em;">,</span></span><span id="MJXc-Node-6" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.223em; padding-bottom: 0.278em;">m</span></span><span id="MJXc-Node-7" class="mjx-munderover MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-8" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.553em; padding-bottom: 0.553em;">∑</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.439em; padding-right: 0.071em;"><span id="MJXc-Node-9" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.223em; padding-bottom: 0.278em;">n</span></span></span></span><span id="MJXc-Node-10" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.223em; padding-bottom: 0.498em;">p</span></span><span id="MJXc-Node-11" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.443em; padding-bottom: 0.608em;">(</span></span><span id="MJXc-Node-12" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.223em; padding-bottom: 0.278em;">n</span></span><span id="MJXc-Node-13" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.162em; padding-bottom: 0.553em;">,</span></span><span id="MJXc-Node-14" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.443em; padding-bottom: 0.278em;">i</span></span><span id="MJXc-Node-15" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.162em; padding-bottom: 0.553em;">,</span></span><span id="MJXc-Node-16" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.223em; padding-bottom: 0.278em;">m</span></span><span id="MJXc-Node-17" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.443em; padding-bottom: 0.608em;">)</span></span><span id="MJXc-Node-18" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.333em;">=</span></span><span id="MJXc-Node-19" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.388em; padding-bottom: 0.388em;">1.0</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">∀</mi><mi>i</mi><mo>,</mo><mi>m</mi><munder><mo>∑</mo><mi>n</mi></munder><mi>p</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1.0</mn></math></span></span><script type="math/tex" id="MathJax-Element-1">\forall i,m \sum_n p(n, i, m) = 1.0</script>. In other words, for any
+parent node <code>m</code>, for any position <code>i</code> that is valid
+for that parent, the sum of the probabilities of all child nodes <code>n</code>
+must add to <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1.0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-20" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-21" class="mjx-mrow"><span id="MJXc-Node-22" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.388em; padding-bottom: 0.388em;">1.0</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1.0</mn></math></span></span><script type="math/tex" id="MathJax-Element-2">1.0</script>.
+<p>
+Your goal is to modify the basic bottom-up enumeration algorithm to
+ensure that it returns the correct expression with the highest probability.
+All the starter code for this part is in a file called <code>part2.js</code>; there is also a file <code>part2.html</code> that you can use to run the code.
+
+<script>
+processDocument();
+</script>
+
+</p><div class="footnotes">
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+</body></html>

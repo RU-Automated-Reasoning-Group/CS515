@@ -1,0 +1,10 @@
+﻿body {
+}
+
+.fakebutton {
+   border-radius:7px; text-align:center; padding:7px; background-color: rgb(47, 99, 64); font-family:Arial; height:30px; width:200px; color:rgb(255, 241, 197); vertical-align:middle
+}
+
+.console {
+   border-radius:3px; text-align:left; padding:7px; background-color: rgb(0, 0, 0); font-family:Arial; height:30px; width:200px; color:rgb(255, 241, 197);
+}
