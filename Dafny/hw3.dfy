@@ -13,7 +13,7 @@
     available at https://github.com/RU-Automated-Reasoning-Group/CS515/blob/master/Dafny/example.dfy
     using the Dafny web interface http://cse-212294.cse.chalmers.se/courses/tdv/dafny/
 
-    Please complete this assignment using the Dafny web interface and submit this file to Canvas.
+    Please complete this assignment using the Dafny web interface and submit this file together with your final project.
 **/
 
 
