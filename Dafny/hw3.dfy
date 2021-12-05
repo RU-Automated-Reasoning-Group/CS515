@@ -1,7 +1,7 @@
 
 /** Assignment 3 Hoare Logic
 
-    Instruction:
+    Instructions:
     
     This assignment helps you strengthen your understanding of using Hoare Logic to verify programs.
 
