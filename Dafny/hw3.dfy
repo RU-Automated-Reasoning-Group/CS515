@@ -1,5 +1,8 @@
 
 /** Assignment 3 Hoare Logic
+
+    Instruction:
+    
     This assignment helps you strengthen your understanding of using Hoare Logic to verify programs.
 
     As illustrated in the Hoare Logic lecture, Dafny can be used to write the proof of a program
