@@ -188,8 +188,6 @@ method LeftPad(c: char, n: int, s: seq<char>) returns (v: seq<char>)
    This code contains a splice_in method, which is used to stitch one array into
    another, returning the result. Tthe implementation you've been provided is correct.
    You'll need to add in invariant and assert statements to get this code working.
-   You may change the implementation if you desire, but you may not change the signature
-   of splice_in, or the preconditions and postconditions of splice_in.
 
    The provided implementation can be divided into three parts:
    1. Copy elements from a until index into the result array.
