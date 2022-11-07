@@ -1,25 +1,22 @@
 
 /** Assignment 3 Hoare Logic
-
-    Instructions:
-    
     This assignment helps you strengthen your understanding of using Hoare Logic to verify programs.
 
-    As illustrated in the Hoare Logic lecture, Dafny can be used to write the proof of a program
-    and verify the proof using the verifier in Dafny (that uses Z3 as its backend).
+    We will use Dafny that is a tool for writing the proof of a program. Your proof can be automatically
+    certified by the verifier in Dafny (that uses Z3 as its backend).
 
     To learn more about Dafny, check out the tutorial https://dafny-lang.github.io/dafny/OnlineTutorial/guide.html
     If you would like to view how Dafny verifies the examples in the tutorial, please run the examples
     available at https://github.com/RU-Automated-Reasoning-Group/CS515/blob/master/Dafny/example.dfy
     using the Dafny web interface http://cse-212294.cse.chalmers.se/courses/tdv/dafny/
 
-    Please complete this assignment using the Dafny web interface and submit this file together with your final project.
+    Please complete this assignment using the Dafny web interface and submit this file to Canvas.
 **/
 
 
 
 
-/* Question 1. Provide an implementation that satisfies the given post-condition */
+/* Question 1 (10 points). Provide an implementation that satisfies the given post-condition */
 method M1 (x0 : int) returns (x : int)
   ensures (x0 < 3 ==> x == 1) && (x0 >= 3 ==> x < x0);
 {
@@ -28,7 +25,7 @@ method M1 (x0 : int) returns (x : int)
 
 
 
-/* Question 2. Provide an implementation that satisfies the given post-condition */
+/* Question 2 (10 points). Provide an implementation that satisfies the given post-condition */
 method M2(a : int, b : int, c : int) returns (m : int)
   ensures (m == a || m == b || m == c);
   ensures (m <= a && m <= b && m <= c) ;
@@ -38,7 +35,7 @@ method M2(a : int, b : int, c : int) returns (m : int)
 
 
 
-/* Question 3. Provide a loop invariant to prove the given assertion in the function */
+/* Question 3 (10 points). Provide a loop invariant to prove the given assertion in the function */
 method M0 (n : int, d : int) returns (r : int)
     requires (n >= 0 && d > 0)
 {
@@ -55,17 +52,16 @@ method M0 (n : int, d : int) returns (r : int)
 
 
 
-/* Question 4. Supply meaningful loop invariants to verify
+/* Question 4 (15 points). Supply meaningful loop invariants to verify
    the iterative factorial_iterative implementation below.
    */
 
 // 0! = 1
 // n! = n * (n - 1)!
-// This code contains a recursive factorial function method, which has been
-// proven correct.
+// This code contains a recursive factorial function method
 function method factorial(n: int): int
-    requires n >= 0;
-    ensures factorial(0) == 1;
+  requires n >= 0;
+  ensures factorial(0) == 1;
 	ensures n > 0 ==> factorial(n) == n * factorial(n - 1);
 {
 	if n == 0 then
@@ -104,7 +100,7 @@ method factorial_iterative(n: int) returns (result: int)
 
 
 
-/* Question 5. Supply meaningful post-conditions and loop invariants to verify
+/* Question 5 (15 points). Supply meaningful post-conditions and loop invariants to verify
    the unique sequence implementation (see the comment below).
    You may find the following documentation of Dafny sequences useful:
    https://dafny-lang.github.io/dafny/OnlineTutorial/Sequences.html */
@@ -130,7 +126,7 @@ method Unique(a: seq<int>) returns (b: seq<int>)
 
 
 
-/* Question 6. Supply meaningful post-conditions and loop invariants to verify
+/* Question 6 (20 points). Supply meaningful post-conditions and loop invariants to verify
    the array insertion sort implementation */
 method insertionSort(a : array<int>)
     requires a != null
@@ -160,7 +156,7 @@ function method max(a: int, b: int): int
 
 
 
-/* Question 7. Supply meaningful loop invariants to verify
+/* Question 7 (20 points). Supply meaningful loop invariants to verify
    the LeftPad implementation below */
 
 /* Given a padding character, a string, and a total length,
@@ -182,12 +178,14 @@ method LeftPad(c: char, n: int, s: seq<char>) returns (v: seq<char>)
 
 
 
-/* Question 8. Supply meaningful loop invariants to verify
+/* Question 8 (Additional Bonus). Supply meaningful loop invariants to verify
    the iterative factorial_iterative implementation below.
 
    This code contains a splice_in method, which is used to stitch one array into
    another, returning the result. Tthe implementation you've been provided is correct.
    You'll need to add in invariant and assert statements to get this code working.
+   You may change the implementation if you desire, but you may not change the signature
+   of splice_in, or the preconditions and postconditions of splice_in.
 
    The provided implementation can be divided into three parts:
    1. Copy elements from a until index into the result array.
