@@ -16,7 +16,7 @@
 
 
 
-/* Question 1 (10 points). Provide an implementation that satisfies the given post-condition */
+/* Question 1 (6 points). Provide an implementation that satisfies the given post-condition */
 method M1 (x0 : int) returns (x : int)
   ensures (x0 < 3 ==> x == 1) && (x0 >= 3 ==> x < x0);
 {
@@ -25,7 +25,7 @@ method M1 (x0 : int) returns (x : int)
 
 
 
-/* Question 2 (10 points). Provide an implementation that satisfies the given post-condition */
+/* Question 2 (6 points). Provide an implementation that satisfies the given post-condition */
 method M2(a : int, b : int, c : int) returns (m : int)
   ensures (m == a || m == b || m == c);
   ensures (m <= a && m <= b && m <= c) ;
@@ -35,7 +35,7 @@ method M2(a : int, b : int, c : int) returns (m : int)
 
 
 
-/* Question 3 (10 points). Provide a loop invariant to prove the given assertion in the function */
+/* Question 3 (6 points). Provide a loop invariant to prove the given assertion in the function */
 method M0 (n : int, d : int) returns (r : int)
     requires (n >= 0 && d > 0)
 {
@@ -52,13 +52,13 @@ method M0 (n : int, d : int) returns (r : int)
 
 
 
-/* Question 4 (15 points). Supply meaningful loop invariants to verify
+/* Question 4 (9 points). Supply meaningful loop invariants to verify
    the iterative factorial_iterative implementation below.
    */
 
 // 0! = 1
 // n! = n * (n - 1)!
-// This code contains a recursive factorial function method
+// A recursive factorial function implementation
 function method factorial(n: int): int
   requires n >= 0;
   ensures factorial(0) == 1;
@@ -100,7 +100,7 @@ method factorial_iterative(n: int) returns (result: int)
 
 
 
-/* Question 5 (15 points). Supply meaningful post-conditions and loop invariants to verify
+/* Question 5 (9 points). Supply meaningful post-conditions and loop invariants to verify
    the unique sequence implementation (see the comment below).
    You may find the following documentation of Dafny sequences useful:
    https://dafny-lang.github.io/dafny/OnlineTutorial/Sequences.html */
@@ -126,7 +126,7 @@ method Unique(a: seq<int>) returns (b: seq<int>)
 
 
 
-/* Question 6 (20 points). Supply meaningful post-conditions and loop invariants to verify
+/* Question 6 (12 points). Supply meaningful post-conditions and loop invariants to verify
    the array insertion sort implementation */
 method insertionSort(a : array<int>)
     requires a != null
@@ -156,7 +156,7 @@ function method max(a: int, b: int): int
 
 
 
-/* Question 7 (20 points). Supply meaningful loop invariants to verify
+/* Question 7 (12 points). Supply meaningful loop invariants to verify
    the LeftPad implementation below */
 
 /* Given a padding character, a string, and a total length,
@@ -178,8 +178,8 @@ method LeftPad(c: char, n: int, s: seq<char>) returns (v: seq<char>)
 
 
 
-/* Question 8 (Additional Bonus). Supply meaningful loop invariants to verify
-   the iterative factorial_iterative implementation below.
+/* Question 8 (Bonus: 15 points). Supply meaningful loop invariants to verify
+   the implementation below.
 
    This code contains a splice_in method, which is used to stitch one array into
    another, returning the result. Tthe implementation you've been provided is correct.
